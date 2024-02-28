@@ -1,0 +1,22 @@
+{
+    "name": "desafio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "env-cmd -f ./src/config/test.env jest --watchAll --detectOpenHandles",
+        "start": "env-cmd -f ./src/config/dev.env nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "supertest": "^6.3.4"
+    },
+    "dependencies": {
+        "env-cmd": "^10.1.0",
+        "express": "^4.18.2",
+        "mongoose": "^8.1.3",
+        "nodemailer": "^6.9.10"
+    }
+}
